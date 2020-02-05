@@ -8,5 +8,6 @@ public class InputTest {
 		Scanner scanner = new Scanner(System.in);
 		String num = scanner.nextLine();
 		System.out.printf("생년월일은 : %s", num);
+		scanner.close();
 	}
 }

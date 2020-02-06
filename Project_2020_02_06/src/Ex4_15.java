@@ -21,5 +21,4 @@ public class Ex4_15 {
 		}while(input!=answer);
 		System.out.println("정답입니다");
 	}
-
 }

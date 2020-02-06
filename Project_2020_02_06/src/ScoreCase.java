@@ -24,8 +24,5 @@ public class ScoreCase {
 			break;
 		}
 		System.out.println(grade);
-		
 	}
-	
-
 }

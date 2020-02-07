@@ -53,15 +53,27 @@ public class Run {
 //		t.x = 1000;
 //		System.out.println("change x:" + t.x);
 		
-		Data1 d1 = new Data1();
-		Data1 d4 = new Data1(10);
-		Data2 d2 = new Data2();
-		Data2 d3 = new Data2(10);
+//		Data1, Data2.java
+//		Data1 d1 = new Data1();
+//		Data1 d4 = new Data1(10);
+//		Data2 d2 = new Data2();
+//		Data2 d3 = new Data2(10);
+//		
+//		System.out.println(d1.value);
+//		System.out.println(d2.value);
+//		System.out.println(d3.value);
+//		System.out.println(d4.value);
 		
-		System.out.println(d1.value);
-		System.out.println(d2.value);
-		System.out.println(d3.value);
-		System.out.println(d4.value);
+		Car car1 = new Car();
+		
+		System.out.println(car1.color);
+		System.out.println(car1.gearType);
+		System.out.println(car1.door);
+		
+		Car car2 = new Car("white", "Auto", 4);
+		
+		System.out.println(car2.color);
+		System.out.println(car2.gearType);
+		System.out.println(car2.door);	
 	}
-	
 }

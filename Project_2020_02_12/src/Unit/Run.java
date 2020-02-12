@@ -25,8 +25,20 @@ public class Run {
 		tank.stop();
 		dropship.stop();
 		
+		Unit[] group = new Unit[4];
+		group[0] = new Marine();
+		group[1] = new Tank();
+		group[2] = new Dropship();
+		group[3] = new Marine();
 		
-
+		for(int i=0;i<group.length;i++) {
+			group[i].move((i+1)*100, (i+3)*100);
+		}
+		
+		for(int i=0;i<group.length;i++) {
+			group[i].stop();
+		}
+		
 	}
 
 }

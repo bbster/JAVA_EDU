@@ -10,7 +10,7 @@ public class Ex13_5 {
 		for(int i=10; i>0; i--) {
 			System.out.println(i);
 			try {
-				Thread.sleep(1000);
+				Thread.sleep(99999);
 			}catch(Exception e) {}
 		}
 	}

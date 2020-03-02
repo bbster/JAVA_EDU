@@ -268,7 +268,7 @@ class DB_RUN {
 			pstmt.setInt(1, custid);
 
 			pstmt.executeUpdate();
-			System.out.println(custid + "번 고객ㅇ 삭제되었습니다");
+			System.out.println(custid + "번 고객이 삭제되었습니다");
 
 		} catch (Exception e) {
 			e.printStackTrace();

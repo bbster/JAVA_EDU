@@ -11,9 +11,9 @@ public class Sales_Management {
 
 		while (true) {
 			System.out.println("작업할 번호를 입력 해주세요.");
-			System.out.println("1. 도서 판매 목록");
+			System.out.println("1. 도서 고객별  판매금액 조회");
 			System.out.println("2. 도서 고객별  판매금액 조회");
-			System.out.println("3. 도서 출판사별 판매금액 조회");
+			System.out.println("3. 도서 도서별 판매금액 조회");
 			System.out.println("0. 뒤 로");
 			Scanner scan = new Scanner(System.in);
 			choose = scan.nextInt();
@@ -21,13 +21,14 @@ public class Sales_Management {
 
 			switch (choose) {
 			case 1:
-				sql_run.bookList();
+				
+				sql_run.salesCustomer();
 				break;
 			case 2:
-				sql_run.bookAdd();
+				sql_run.salesPublisher();
 				break;
 			case 3:
-				sql_run.bookCount();
+				sql_run.salesBybook();
 				break;
 			case 0:
 				return;

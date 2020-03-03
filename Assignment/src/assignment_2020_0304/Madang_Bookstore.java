@@ -9,15 +9,15 @@ public class Madang_Bookstore {
 		DB_RUN con_db = new DB_RUN();
 		Book_Management book_m = new Book_Management();
 		Customer_Management customer_m = new Customer_Management();
-//		Sales_Management sales_m = new Sales_Management();
+		Sales_Management sales_m = new Sales_Management();
 		int choose;
 		Scanner scan = new Scanner(System.in);
-		loop:
+
 		while (true) {
 			System.out.println("작업할 번호를 입력 해주세요.");
 			System.out.println("1. 도서 관리");
 			System.out.println("2. 고객 관리");
-			System.out.println("3. 판매 관리");
+			System.out.println("3. 판매 관리(미구현)");
 			System.out.println("0. 종 료");
 			choose = scan.nextInt();
 
@@ -29,7 +29,7 @@ public class Madang_Bookstore {
 				customer_m.CustomerManagement();
 				break;
 			case 3:
-//				sales_m.sales_system();
+				sales_m.SalesManagement();
 				break;
 
 			case 0:

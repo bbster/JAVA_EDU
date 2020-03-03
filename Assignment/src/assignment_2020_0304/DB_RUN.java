@@ -159,7 +159,7 @@ class DB_RUN {
 			}
 		}
 	}
-	
+
 	public void customerAdd() {
 		con = null;
 		pstmt = null;
@@ -200,19 +200,17 @@ class DB_RUN {
 		}
 	}
 
-
-
 	public void customerUpdate() {
 		con = null;
 		pstmt = null;
 		String query = "SELECT * FROM CUSTOMER WHERE CUSTID=?";
 		String query2 = "UPDATE CUSTOMER SET NAME=?, ADDRESS=?, PHONE=? WHERE CUSTID=?";
-		
+
 		try {
 			Class.forName(driver);
 			con = DriverManager.getConnection(url, username, password);
 			pstmt = con.prepareStatement(query);
-			
+
 			System.out.print("수정할 고객 ID 입력: ");
 			int custid = scan.nextInt();
 
@@ -254,7 +252,7 @@ class DB_RUN {
 			}
 		}
 	}
-	
+
 	public void customerDelete() {
 		String query = "DELETE FROM CUSTOMER WHERE CUSTID = ?";
 		try {
@@ -281,4 +279,8 @@ class DB_RUN {
 
 		}
 	}
+	public void customerPoint() {}  // 고객 포인트 관리
+	public void salesCustomer() {} // 고객별 판매 관리
+	public void salesPublisher() {} // 출판사별 판매 관리
+	public void salesBybook() {}  // 도서별 판매 관리
 }

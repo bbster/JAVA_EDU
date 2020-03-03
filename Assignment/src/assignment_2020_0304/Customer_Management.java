@@ -16,7 +16,7 @@ public class Customer_Management {
 			System.out.println("2. 고객 추가");
 			System.out.println("3. 고객 정보 수정");
 			System.out.println("4. 고객 삭제");
-			System.out.println("5. 고객 포인트 조회");
+			System.out.println("5. 고객 포인트 조회(미구현)");
 			System.out.println("0. 뒤 로");
 			Scanner scan = new Scanner(System.in);
 			choose = scan.nextInt();
@@ -36,7 +36,7 @@ public class Customer_Management {
 				sql_run.customerDelete();
 				break;
 			case 5:
-//				sql_run.customerPoint();
+				sql_run.customerPoint();
 				break;
 			case 0:
 				return;
